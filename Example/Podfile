@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MJProgressView_Example', :exclusive => true do
+  pod 'MJProgressView', :path => '../'
+end
+
+target 'MJProgressView_Tests', :exclusive => true do
+  pod 'MJProgressView', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
