@@ -54,7 +54,7 @@ progress = [[MJProgressView alloc] initWithFrame:CGRectMake(20, 200, 280, 2) pro
 
 ## Author
 
-minjoongkim, me@techinpark.com
+minjoongkim, kmj6773@gmail.com
 
 ## License
 
