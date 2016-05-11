@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8FDE1D1CE1D7E800970994 /* MJProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FDE1A1CE1D7E800970994 /* MJProgressView.m */; };
+		1E8FDE1E1CE1D7E800970994 /* MJProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8FDE1C1CE1D7E800970994 /* MJProgressViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E8FDE191CE1D7E800970994 /* MJProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProgressView.h; sourceTree = "<group>"; };
+		1E8FDE1A1CE1D7E800970994 /* MJProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProgressView.m; sourceTree = "<group>"; };
+		1E8FDE1B1CE1D7E800970994 /* MJProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProgressViewController.h; sourceTree = "<group>"; };
+		1E8FDE1C1CE1D7E800970994 /* MJProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProgressViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MJProgressView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJProgressView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,9 +59,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		67C46661982ECDA4D101AFBD /* MJProgressView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = MJProgressView.podspec; path = ../MJProgressView.podspec; sourceTree = "<group>"; };
+		67C46661982ECDA4D101AFBD /* MJProgressView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MJProgressView.podspec; path = ../MJProgressView.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B360CE3CF475EEF778FD7801 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B360CE3CF475EEF778FD7801 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CAC37E806A5D4EEBBB5CA4B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E8FDE181CE1D7E800970994 /* MJProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FDE191CE1D7E800970994 /* MJProgressView.h */,
+				1E8FDE1A1CE1D7E800970994 /* MJProgressView.m */,
+				1E8FDE1B1CE1D7E800970994 /* MJProgressViewController.h */,
+				1E8FDE1C1CE1D7E800970994 /* MJProgressViewController.m */,
+			);
+			path = MJProgressView;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +134,7 @@
 		6003F593195388D20070C39A /* Example for MJProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				1E8FDE181CE1D7E800970994 /* MJProgressView */,
 				6003F59C195388D20070C39A /* MJProgressViewAppDelegate.h */,
 				6003F59D195388D20070C39A /* MJProgressViewAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -222,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "MJProgressView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -269,7 +287,9 @@
 			files = (
 				6003F59E195388D20070C39A /* MJProgressViewAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MJProgressViewViewController.m in Sources */,
+				1E8FDE1D1CE1D7E800970994 /* MJProgressView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1E8FDE1E1CE1D7E800970994 /* MJProgressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,9 +412,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJProgressView/MJProgressView-Prefix.pch";
 				INFOPLIST_FILE = "MJProgressView/MJProgressView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,9 +429,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJProgressView/MJProgressView-Prefix.pch";
 				INFOPLIST_FILE = "MJProgressView/MJProgressView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -459,7 +483,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "MJProgressView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,

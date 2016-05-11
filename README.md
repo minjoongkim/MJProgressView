@@ -1,13 +1,10 @@
-# MJProgressView
+MJProgressView is a simple and Multiple colors in a UIProgressView.
 
-[![CI Status](http://img.shields.io/travis/minjoongkim/MJProgressView.svg?style=flat)](https://travis-ci.org/minjoongkim/MJProgressView)
-[![Version](https://img.shields.io/cocoapods/v/MJProgressView.svg?style=flat)](http://cocoapods.org/pods/MJProgressView)
-[![License](https://img.shields.io/cocoapods/l/MJProgressView.svg?style=flat)](http://cocoapods.org/pods/MJProgressView)
-[![Platform](https://img.shields.io/cocoapods/p/MJProgressView.svg?style=flat)](http://cocoapods.org/pods/MJProgressView)
+![MJProgressView](MJProgressView.gif "Example 1")
 
-## Example
+## Installation
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Installation is made simple with [CocoaPods](http://cocoapods.org/). If you want to do it the old fashioned way, just add `MJProgressView.h` and `MJProgressView.m` and `MJProgressViewController.h` and `MJProgressViewController.m` into your project.
 
 ## Requirements
 
@@ -18,6 +15,41 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "MJProgressView"
+```
+
+Then, simply place this line in any file that uses MJProgressView.
+
+```objc
+#import <MJProgressView.h>
+```
+
+MJProgressView works on iOS 6.0 and up.
+
+## Usage
+
+###Example usage: *.h
+
+```objc
+#import "MJProgressView.h"
+
+@property (nonatomic, strong) MJProgressView *progress;
+
+```
+
+###Example usage: *.m
+
+```objc
+@synthesize progress;
+
+NSArray *color = [[NSArray alloc]initWithObjects:[UIColor blueColor], [UIColor redColor], [UIColor orangeColor], nil];
+progress = [[MJProgressView alloc] initWithFrame:CGRectMake(20, 200, 280, 2) progressCount:3 color:color];
+[self.view addSubview:progress];
+
+```
+
+###On Progress Change
+```objc
+[progress setProgressAnimation:0.2];
 ```
 
 ## Author
